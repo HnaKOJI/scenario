@@ -1,0 +1,157 @@
+* {
+margin: 0;
+padding: 0;
+color: #000000;
+}
+html {
+    font-size: 20px;
+}
+h1 {
+    font-size: 4rem;
+    margin-top: 20px;
+    text-align: center;
+
+}
+h2 {
+    font-size: 3.5rem;
+}
+h3 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+h4 {
+    font-size: 1.7rem;
+    line-height: 3rem;
+}
+h5 {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+h6 {
+    font-size: 1rem;
+    line-height: 2rem;
+    display:inline;
+}
+
+/* body */
+
+.container {
+    display: flex;
+    width: min(100% - 2rem, 1920px);
+    margin-inline: auto;
+    margin-block-end: 200px;
+}
+.txt_area {
+    /* width: min(100% - 2rem, 1500px); */
+    flex: 1 1 70%;
+    /* margin-inline: auto; */
+    padding-left: 30px;
+}
+section {
+    margin: 50px 0;
+}
+.txt_area section:first-child {
+    margin: 0 ;
+}
+.scenario__txt {
+    width: min(100% - 80px);
+    margin-inline: auto;
+    margin-bottom: 15px;
+    line-height: 1.7rem;
+}
+.info__list li::marker {
+    content: "情報" counter(list-item) ",";
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+}
+ol li {
+    padding: 5px 0;
+    padding-left: 10px;
+}
+ol {
+    list-style-position: inside;
+}
+a {
+    font-weight: bold;
+}
+span.red {
+    color: #ff0000;
+}
+span.RP_2p {
+    color: #58aeff;
+}
+span.RP_3p {
+    color: #8d0092;
+}
+span.U-line {
+    margin: 10px 0;
+    border-bottom: 1px solid #ff0000;
+}
+span.h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+span.h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+span.h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 4rem;
+}
+span.h4 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+span.h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+span.h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.last_battle_C_status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.C_status {
+    
+}
+
+/* sidebar */
+
+.side {
+    position: sticky;
+    top: 10px;
+    flex: 1 1 10%;
+    min-width: 250px;
+    height: 780px;
+    padding: 20px;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+}
+/* .side_content {
+
+} */
+.side_character > h6,
+.side_search > h6,
+.side_end > h6 {
+    margin: 0;
+}
+
+/* thumbnail start */
+
+.thumbnail_container {
+    width: 720px;
+    height: 540px;
+    border: 1px solid #000000;
+}
+
+/* thumbnail end */
